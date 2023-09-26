@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #777;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 3px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, "{{ employee_id }}"</h1>
+    <h2>{{ greeting}}!</h2>
+    <p>Explore your expenses</p>
+    <a href="{{ url_for('add_expenses') }}">Add Expense</a>
+    <a href="{{ url_for('view_expenses') }}">View Expenses</a>
+    <a href="{{ url_for('visualize_expenses') }}">Visualize Expenses</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #777;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Expense Visualization</h1>
+    <div>
+        <img src="data:image/png;base64,{{ plot | safe }}" alt="Expense Visualization">
+    </div>
+    <p><a href="/dashboard">Back to Dashboard</a></p>
+</body>
+</html>
